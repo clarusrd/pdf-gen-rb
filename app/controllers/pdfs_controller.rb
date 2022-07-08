@@ -5,6 +5,6 @@ class PdfsController < ApplicationController
   def create
     @pdf = ReportPdf.new(params).render()
 
-    render json: Base64.encode64(@pdf)
+    render json: {binary_pdf:  Base64.strict_encode64(@pdf)}
   end
 end
