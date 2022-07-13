@@ -66,6 +66,8 @@ GEM
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
       tzinfo (~> 2.0)
+    appsignal (3.0.27)
+      rack
     ast (2.4.2)
     bootsnap (1.12.0)
       msgpack (~> 1.2)
@@ -112,6 +114,8 @@ GEM
     nio4r (2.5.8)
     nokogiri (1.13.6)
       mini_portile2 (~> 2.8.0)
+      racc (~> 1.4)
+    nokogiri (1.13.6-x86_64-linux)
       racc (~> 1.4)
     parallel (1.22.1)
     parser (3.1.2.0)
@@ -198,6 +202,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  appsignal
   bootsnap
   debug
   prawn
